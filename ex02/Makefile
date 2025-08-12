@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sniemela <sniemela@student.hive.fi>        +#+  +:+       +#+         #
+#    By: saaraniemela <saaraniemela@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/09 12:42:11 by sniemela          #+#    #+#              #
-#    Updated: 2025/08/08 12:51:18 by sniemela         ###   ########.fr        #
+#    Updated: 2025/08/12 16:02:36 by saaraniemel      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
