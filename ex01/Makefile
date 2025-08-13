@@ -6,7 +6,7 @@
 #    By: sniemela <sniemela@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/09 12:42:11 by sniemela          #+#    #+#              #
-#    Updated: 2025/08/07 12:53:38 by sniemela         ###   ########.fr        #
+#    Updated: 2025/08/13 10:55:06 by sniemela         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,20 +21,20 @@ OBJS = $(SOURCES:src/%.cpp=$(OBJDIR)/%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CPP) $(CPPFLAGS) $(OBJS) -o $(NAME)
+	$(CPP) $(CPPFLAGS) $(OBJS) -o $(NAME)
 
 $(OBJDIR)/%.o: src/%.cpp | $(OBJDIR)
-	@mkdir -p $(OBJDIR)
-	@$(CPP) $(CPPFLAGS) -c $< -o $@
+	mkdir -p $(OBJDIR)
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 $(OBJDIR):
-	@mkdir -p $(OBJDIR)
+	mkdir -p $(OBJDIR)
 
 clean:
-	@rm -rf $(OBJDIR)
+	rm -rf $(OBJDIR)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
